@@ -1,0 +1,127 @@
+.all{
+    min-height: 100vh;
+    max-height: 100vh;
+    max-width: 100%;
+    width:100%;
+    text-decoration: none;
+    overflow-x: hidden;
+    background-color: yellow;
+}
+.header{
+    font-family: poppins;
+    display: flex;
+    max-width:100%;
+    width: 100%;
+    height: 10%;
+    padding-top:1%;
+    font-size: clamp(1.2em,5vw,1.7em);
+    background-color: yellow;
+    color:black;
+    text-align: center;
+}
+.navList{
+    justify-content: space-between;
+    width: 100vw;
+    color: yellow;
+    font-weight: 400;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+li{
+    white-space: nowrap; /*keeps text on one like */
+    cursor: pointer;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+li:hover,a:hover{
+    color: grey;
+}
+
+a:link {
+    text-decoration: none;
+    color:black;
+  }
+.center{
+    display: flex;
+    height: 90vh;
+    font-size: clamp(0.8em,3vw,1.5em);
+    background-color: yellow;
+    color: black;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: JSans;
+    position:fixed;
+    max-height: 100%;
+    bottom: 0%;
+    font-size: clamp(0.8em,2vw,1em);
+    color:black;
+    background-color: yellow;
+}
+.left,.right{
+    height: 100%;
+    width: 50%;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.panelA,.panelB{
+    height: 35%;
+    width: 80%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panelA{
+    font-family: poppins-bold;
+    font-size: clamp(1.3em,5vw,2em);
+}
+.panelB{
+    font-family: poppins;
+}
+.panelC{
+    height:30%;
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: poppins;
+}
+.picSlider{
+    height: 80%;
+    width: 80%;
+    background-color: black;
+}
+
+@media (min-width: 1px)and (max-width : 400px){
+ 
+}
+@media (min-width: 1px)and (max-width : 714px){
+  
+}
+@font-face{
+    font-family: 'poppins';
+    src:url("../assets/Poppins-Medium.ttf");
+}
+@font-face{
+    font-family: 'poppins-bold';
+    src:url("../assets/Poppins-Bold.ttf");
+}
+@font-face{
+    font-family: 'JSans';
+    src:url("../assets/JSans.ttf");
+}
