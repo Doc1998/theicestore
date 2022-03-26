@@ -5,7 +5,7 @@
     width:100%;
     text-decoration: none;
     overflow-x: hidden;
-    background-color: yellow;
+    background-color: rgb(229, 243, 248);
 }
 .header{
     font-family: poppins;
@@ -15,7 +15,6 @@
     height: 10%;
     padding-top:1%;
     font-size: clamp(1.2em,5vw,1.7em);
-    background-color: yellow;
     color:black;
     text-align: center;
 }
@@ -49,7 +48,6 @@ a:link {
     display: flex;
     height: 90vh;
     font-size: clamp(0.8em,3vw,1.5em);
-    background-color: yellow;
     color: black;
 }
 
@@ -58,18 +56,16 @@ footer{
     justify-content: center;
     align-items: center;
     width: 100%;
-    font-family: JSans;
+    font-family: Arial, Helvetica, sans-serif;
     position:fixed;
     max-height: 100%;
     bottom: 0%;
     font-size: clamp(0.8em,2vw,1em);
     color:black;
-    background-color: yellow;
 }
 .left,.right{
     height: 100%;
     width: 50%;
-    background-color: yellow;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,7 +73,7 @@ footer{
 }
 
 .panelA,.panelB{
-    height: 35%;
+    height: 30%;
     width: 80%;
     color: black;
     display: flex;
@@ -86,32 +82,144 @@ footer{
 }
 .panelA{
     font-family: poppins-bold;
-    font-size: clamp(1.3em,5vw,2em);
+    font-size: clamp(1.6em,5vw,2em);
 }
 .panelB{
     font-family: poppins;
 }
 .panelC{
-    height:30%;
-    width: 100%;
+    height:40%;
+    width: 80%;
     color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: poppins;
+    font-size: clamp(1.1em,1vw,1.2em);
+}
+.panelC form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .picSlider{
     height: 80%;
     width: 80%;
-    background-color: black;
+    overflow-y: hidden;
+    text-align: center;
+    font-family: poppins;
+    font-size: clamp(0.8em,1vw,1.2em);
+}
+.picSlider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-@media (min-width: 1px)and (max-width : 400px){
- 
+.createBtn{
+    text-align: center;
+    margin-top: 5%;
+    width:60%;
+    margin-left:40%;
+    margin-right:40%;
+    font-family: poppins-bold;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 2px 3px 0px rgb(0 0 0 / 40%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: blue;
+    cursor:pointer;
+    font-size: clamp(1.2em,4vw,1.2em);
 }
-@media (min-width: 1px)and (max-width : 714px){
-  
+.input{
+    text-align: center;
+    margin-top: 5%;
+    width:50%;
+    font-family: poppins;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 2px 3px 0px rgb(0 0 0 / 40%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: white;
+    cursor:pointer;
+    height: 40%;
+    padding: 10px 20px;
+    font-size: clamp(0.6em,3vw,0.7em);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input ::placeholder {
+    color: black; /*Change the placeholder color*/
+    opacity: 0.5; /*Change the opacity between 0 and 1*/
+}
+@media (min-width: 1px)and (max-width : 400px){
+ .all{
+     display: flex;
+     flex-direction: column;
+ }
+ .center{
+    display: flex;
+    flex-direction: column;
+ }
+ .input{
+     height:40%;
+     font-size: 1.5em;
+     margin-top: 8%;
+     width: 70%;
+     padding: 5px 10px;
+ }
+ .navList{
+    justify-content: center;
+}
+.panelB,.panelC{
+    margin-top: 8%;
+}
+.createBtn{
+    width: 80%;
+}
+}
+@media (min-width: 1px)and (max-width : 950px){
+    .all{
+        display: flex;
+        flex-direction: column;
+    }
+    .center{
+        display: flex;
+        flex-direction: column;
+     }
+     .left,.right{
+         width: 100%;
+     }
+     .input{
+        height:40%;
+        font-size: 1.5em;
+        margin-top: 8%;
+        width: 80%;
+        padding: 10px 20px;
+    }
+    .navList{
+        justify-content: center;
+    }
+    .panelB,.panelC{
+        margin-top: 8%;
+    }
+    .createBtn{
+        width: 90%;
+        padding: 10px 20px;
+    }
 }
 @font-face{
     font-family: 'poppins';
