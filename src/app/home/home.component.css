@@ -1,235 +1,76 @@
-.all{
-    min-height: 100vh;
-    max-height: 100vh;
-    max-width: 100%;
-    width:100%;
-    text-decoration: none;
-    overflow-x: hidden;
-    background-color: rgb(229, 243, 248);
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.landing {
+  height: 580px;
+  width: 100%;
+  background-color:blue;
 }
 .header{
-    font-family: poppins;
-    display: flex;
-    max-width:100%;
-    width: 100%;
-    height: 10%;
-    padding-top:1%;
-    font-size: clamp(1.2em,5vw,1.7em);
-    color:black;
-    text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.navList{
-    justify-content: space-between;
-    width: 100vw;
-    color: yellow;
-    font-weight: 400;
+.header h1{
+  margin: 0;
+  padding: 10px;
+  color: white;
 }
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+.landingText{
+  color: white;
+  width: 100%;
 }
-li{
-    white-space: nowrap; /*keeps text on one like */
-    cursor: pointer;
-    margin-left: 2%;
-    margin-right: 2%;
+.landingTitle,.landingSubtitle{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
-li:hover,a:hover{
-    color: grey;
+.landingTitle{
+  margin-left: 5%;
+  font-weight: bolder;
 }
-
-a:link {
-    text-decoration: none;
-    color:black;
-  }
-.center{
-    display: flex;
-    height: 90vh;
-    font-size: clamp(0.8em,3vw,1.5em);
-    color: black;
+.landingSubtitle{
+  margin: 30px 0px;
+  margin-left: 5%;
+  font-weight: 100;
+  width: 80%;
 }
-
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    position:fixed;
-    max-height: 100%;
-    bottom: 0%;
-    font-size: clamp(0.8em,2vw,1em);
-    color:black;
-}
-.left,.right{
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.button-6 {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 10px;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
 }
 
-.panelA,.panelB{
-    height: 30%;
-    width: 80%;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.panelA{
-    font-family: poppins-bold;
-    font-size: clamp(1.6em,5vw,2em);
-}
-.panelB{
-    font-family: poppins;
-}
-.panelC{
-    height:40%;
-    width: 80%;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: poppins;
-    font-size: clamp(1.1em,1vw,1.2em);
-}
-.panelC form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.picSlider{
-    height: 80%;
-    width: 80%;
-    overflow-y: hidden;
-    text-align: center;
-    font-family: poppins;
-    font-size: clamp(0.8em,1vw,1.2em);
-}
-.picSlider img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.button-6:hover,
+.button-6:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
 }
 
-.createBtn{
-    text-align: center;
-    margin-top: 5%;
-    width:60%;
-    margin-left:40%;
-    margin-right:40%;
-    font-family: poppins-bold;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0px 2px 3px 0px rgb(0 0 0 / 40%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    background-color: blue;
-    cursor:pointer;
-    font-size: clamp(1.2em,4vw,1.2em);
-}
-.input{
-    text-align: center;
-    margin-top: 5%;
-    width:50%;
-    font-family: poppins;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0px 2px 3px 0px rgb(0 0 0 / 40%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    background-color: white;
-    cursor:pointer;
-    height: 40%;
-    padding: 10px 20px;
-    font-size: clamp(0.6em,3vw,0.7em);
-    font-family: Arial, Helvetica, sans-serif;
-}
-.form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.input ::placeholder {
-    color: black; /*Change the placeholder color*/
-    opacity: 0.5; /*Change the opacity between 0 and 1*/
-}
-@media (min-width: 1px)and (max-width : 400px){
- .all{
-     display: flex;
-     flex-direction: column;
- }
- .center{
-    display: flex;
-    flex-direction: column;
- }
- .input{
-     height:40%;
-     font-size: 1.5em;
-     margin-top: 8%;
-     width: 70%;
-     padding: 5px 10px;
- }
- .navList{
-    justify-content: center;
-}
-.panelB,.panelC{
-    margin-top: 8%;
-}
-.createBtn{
-    width: 80%;
-}
-}
-@media (min-width: 1px)and (max-width : 950px){
-    .all{
-        display: flex;
-        flex-direction: column;
-    }
-    .center{
-        display: flex;
-        flex-direction: column;
-     }
-     .left,.right{
-         width: 100%;
-     }
-     .input{
-        height:40%;
-        font-size: 1.5em;
-        margin-top: 8%;
-        width: 80%;
-        padding: 10px 20px;
-    }
-    .navList{
-        justify-content: center;
-    }
-    .panelB,.panelC{
-        margin-top: 8%;
-    }
-    .createBtn{
-        width: 90%;
-        padding: 10px 20px;
-    }
-}
-@font-face{
-    font-family: 'poppins';
-    src:url("../assets/Poppins-Medium.ttf");
-}
-@font-face{
-    font-family: 'poppins-bold';
-    src:url("../assets/Poppins-Bold.ttf");
-}
-@font-face{
-    font-family: 'JSans';
-    src:url("../assets/JSans.ttf");
+.button-6:hover {
+  transform: translateY(-1px);
 }
