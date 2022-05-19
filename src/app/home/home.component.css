@@ -145,6 +145,28 @@
 .item h3{
   margin: 5px 0px 5px 0px;
 }
+/* Pricing Text */
+h2 span{
+  color: blue;
+}
+.pricingText{
+ margin: 0px 10px 10px 10px;
+}
+.list-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.list-item {
+  margin-bottom: 50px;
+  padding-left: 42px;
+}
+.list-item h3:before {
+  content: "✔️";
+  position: relative;
+  left: -10px;
+  height: 30px;
+}
 @media (min-width: 900px) {
   .landingLeft {
     width: 50%;
